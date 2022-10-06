@@ -1,6 +1,7 @@
 import unittest
-from model import *
+from model import Bracket,Press,Tool
 class TestInterpolation(unittest.TestCase):
+    
     def test_PieceCollision(self):
         press =self.ComposePress()
         brk = Bracket(Tool(10),150)
@@ -46,6 +47,5 @@ class TestInterpolation(unittest.TestCase):
         press.tool_Add(brk1)
         return press
         
-
 if __name__ == '__main__':
     unittest.main()
